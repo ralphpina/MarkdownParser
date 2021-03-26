@@ -23,7 +23,11 @@ This POC tries to handle the following markdown styles:
 
 - We welcome contributions :)
 
-Thus, the following copy: `"Some text is **bold**. While some text is _italic_. Other is __underlined__. Lastly we have [link](http://google.com)."`
+### Example
+Thus, the following copy: 
+```kotlin
+val markdown = "Some text is **bold**. While some text is _italic_. Other is __underlined__. Lastly we have [link](http://google.com)."
+```
 
 Used like so in **Android**:
 
