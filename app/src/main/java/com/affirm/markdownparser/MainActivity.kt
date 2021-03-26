@@ -1,14 +1,7 @@
 package com.affirm.markdownparser
 
-import android.graphics.Typeface
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableStringBuilder
-import android.text.style.ClickableSpan
-import android.text.style.StyleSpan
-import android.text.style.UnderlineSpan
-import android.util.Log
-import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -24,8 +17,7 @@ class MainActivity : AppCompatActivity() {
 
   private fun testParser() {
     val textView = findViewById<TextView>(R.id.text_view)
-    val button = findViewById<TextView>(R.id.button)
-    val result = parse(markdown)
+    val button = findViewById<Button>(R.id.button)
     textView.renderMarkdown(markdown)
     button.renderMarkdown(markdown)
   }
